@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Art & Culture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-white shadow-md sticky top-0 z-50">
+    <div class="flex items-center">
+      <!-- Hamburger Menu -->
+      <button id="menu-button" class="mr-4">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <span class="font-bold text-xl">Art & Culture</span>
+    </div>
+
+
+<div class="hidden md:flex space-x-6">
+  <a href="#" class="text-gray-700 relative group transition-all duration-300 flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.65 6.65a7.5 7.5 0 010 10.6z" />
+    </svg>
+    Home
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+  </a>
+  <a href="nearby.css" class="text-gray-700 relative group transition-all duration-300">
+    Nearby</a>
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+  </a>
+  <a href="#" class="text-gray-700 relative group transition-all duration-300">
+    Favourites
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+  </a>
+  <a href="#" class="text-gray-700 relative group transition-all duration-300">
+    Explore
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+  </a>
+</div>
+
+<!-- Profile Icon -->
+<div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxoRIqk-TRI7-2iTLN7lv-MCpRyP7YIE_KQ&s" class="rounded-full w-8 h-8" alt="Profile">
+</div>
+
+
+  </nav>
+
+  <!-- Sidebar (Hidden by default) -->
+
+  <div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-md transform -translate-x-full transition-transform duration-300 z-50">
+    <div class="p-6">
+      <h2 class="text-xl font-bold mb-4">Menu</h2>
+      <ul class="space-y-4">
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Home
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Craft
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Design
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          History
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Artist
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Explore
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Nearby
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Favourites
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Setting
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+        <li><a href="#" class="text-gray-700 relative group transition-all duration-300 block">
+          Profile
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-30 hidden z-40"></div>
+
+  <!-- Half Cover Image -->
+
+<div class="h-[40rem] bg-cover bg-center" style="background-image: url('https://cdn.cosmos.so/49388d6c-7cc8-4ecb-a7a1-e9968bc8625c?format=jpeg');">
+  <div class="w-full h-full bg-black bg-opacity-30 flex items-center justify-center">
+    <h1 class="text-white text-3xl font-semibold">Art & Culture</h1>
+  </div>
+</div>
+
+  
+
+  <div class="p-6 mt-10 bg-gray-200 rounded-lg mx-4">
+    <h2 class="text-2xl font-semibold mb-6">Explore Cities</h2>
+
+
+
+<div class="flex overflow-x-auto space-x-6">
+
+  <!-- City Card -->
+  <div class="flex-shrink-0 w-64">
+    <div class="relative">
+      <img src="https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg" class="rounded-lg h-40 w-full object-cover">
+      <div class="absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">Mumbai</div>
+    </div>
+    <p class="mt-2 text-gray-700">Jehangir Art Gallery</p>
+  </div>
+
+  <!-- City Card -->
+  <div class="flex-shrink-0 w-64">
+    <div class="relative">
+      <img src="https://www.tripsavvy.com/thmb/JR95Cc--TdV7YCR7noT5uAy0mMs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-521733846_Darkroom-125adbb08a044a2db915fefc1eb741b2.jpg" class="rounded-lg h-40 w-full object-cover">,
+      
+      <div class="absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">Pune</div>
+    </div>
+    <p class="mt-2 text-gray-700">Bliss Art Gallery</p>
+  </div>
+
+  
+  <div class="flex-shrink-0 w-64">
+    <div class="relative">
+      <img src="https://s7ap1.scene7.com/is/image/incredibleindia/red-fort-delhi1-attr-hero?qlt=82&ts=1727352314555" class="rounded-lg h-40 w-full object-cover">
+      <div class="absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">Delhi</div>
+    </div>
+    <p class="mt-2 text-gray-700">National Gallery of Modern Art</p>
+  </div>
+
+ 
+  <div class="flex-shrink-0 w-64">
+    <div class="relative">
+      <img src="https://static.toiimg.com/thumb/110801054/kolkata.jpg?width=1200&height=900" class="rounded-lg h-40 w-full object-cover">
+      <div class="absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">Kolkata</div>
+    </div>
+    <p class="mt-2 text-gray-700">Arts Acre</p>
+  </div>
+
+
+<div class="flex-shrink-0 w-64">
+  <div class="relative">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1200px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg" class="rounded-lg h-40 w-full object-cover">
+    <div class="absolute bottom-2 left-2 text-white bg-black bg bg-opacity-30 px-2 py-1 rounded">More</div>
+  </div>
+  <p class="mt-2 text-gray-700">More</p>
+</div>
+
+
+</div>
+
+  </div>
+  <!-- Explore More Section (Colors + Events in One Scroll) -->
+<div class="p-6 mt-10 bg-gray-200 rounded-lg mx-4 mb-10">
+  <h2 class="text-2xl font-semibold mb-6">Explore More</h2>
+
+  <div class="flex overflow-x-auto space-x-6">
+    <!-- Color Card -->
+<div class="flex-shrink-0 w-[44rem] bg-white rounded-lg shadow-md p-6 h-auto">
+  <a href="color explorer.html"><img src="https://cdn.cosmos.so/7e382484-ce8a-4cdb-a155-fcf2d02f9e0d?format=jpeg" alt="Colour explorer" class="w-full h-48 object-cover rounded-md mb-4"></a>
+  <h3 class="text-2xl font-semibold mb-2">Colour Explorer</h3>
+  <p class="text-gray-700 text-base">Let the colours guide your journey to the artworks.</p>
+</div> 
+
+
+
+<div class="flex-shrink-0 w-[44rem] bg-white rounded-lg shadow-md p-6 h-auto">
+  <img src="https://i.pinimg.com/736x/3a/b8/d3/3ab8d3758e2888314043b21cfd29571a.jpg" alt="Kala Ghoda Festival" class="w-full h-48 object-cover rounded-md mb-4">
+  <h3 class="text-2xl font-semibold mb-2">Kala Ghoda Festival</h3>
+  <p class="text-gray-600 text-base mb-2">Mumbai · Feb 2025</p>
+  <p class="text-gray-700 text-base">
+    Experience a fusion of traditional and contemporary arts, with performances, exhibitions, and workshops from renowned artists.
+  </p>
+  <div class="mt-4 text-blue-600 text-sm font-medium">Learn More →</div>
+</div>
+
+</body>
+
+ <script src="scripts/settings.js"> </script>
+
+</html>                                                                                                                                                                
